@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&family=Sacramento&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 *,
 *::after,
@@ -32,6 +33,33 @@ h1{
   font-family: Roboto;
   font-size: 50px;
 }
+h3{
+  font-weight: 600;
+  font-family: Roboto;
+  font-size: 25px;
+}
+@media only screen and (max-width: 500px){
+  h1{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 5px;
+  }
+  p{
+    font-size: 5px;
+  }
+}
+@media only screen and (max-width: 800px){
+  h1{
+    font-size: 35px;
+  }
+  h4{
+    font-size: 5px;
+  }
+  p{
+    font-size: 5px;
+  }
+}
 h4{
   font-weight: 700;
   font-family: Roboto;
@@ -40,7 +68,7 @@ h4{
 p{
   font-weight: 400;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 18px;
 }
 body::-webkit-scrollbar {
   width: 1rem;
@@ -69,7 +97,23 @@ img, .img-fluid {
 .navbar{
     background-color:  #c2141a;
 }
-
+.header-white .navbar{
+  background-color:  #ffffff;
+}
+.header-white .nav-link{
+  color: #0c0b0b;
+}
+.header-white .navbar-nav .nav-link:hover {
+  border: none;
+  color: #c2141a;
+}
+.header-white .navbar-nav .nav-link:hover{
+  border-bottom: 2px solid #c2141a;
+  
+}
+.header-white .navbar-nav .nav-link.active{
+  border-bottom: 2px solid #c2141a;
+}
 .navbar-nav{
     border-radius: 0;
     font-size: 16px;
@@ -143,8 +187,8 @@ img, .img-fluid {
 
 .index-fourth-section{
   background-color: rgb(238, 238, 238);
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .index-fourth-section i{
   color: #c2141a;
@@ -159,21 +203,25 @@ img, .img-fluid {
   font-weight: 700;
 }
 .index-forth-section-second{
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-left: 50px;
 }
 
 
 /* ..............................fifth-section............................. */
-
+.testimonials i{
+  color: #c2141a;
+  font-size: 55px;
+  padding-bottom: 40px;
+}
 .owl-carousel {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
 .slide {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,8 +233,7 @@ img, .img-fluid {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 50%;
 }
 
 
@@ -200,10 +247,7 @@ img, .img-fluid {
 }
 
 .owl-dots {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 20%;
+  display: none;
 }
 
 .owl-dots span {
@@ -269,6 +313,7 @@ img, .img-fluid {
 /* .......................footer......................... */
 .footer-section{
   background-color: #050814;
+  padding-top: 50px;
 }
 .footer-section h1{
   color: aliceblue;
@@ -296,4 +341,190 @@ img, .img-fluid {
   .company-logos{
     display: none;
   }
+}
+
+/* ..................aboutus................. */
+.aboutus-first-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.aboutus-first-section h1{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 500;
+
+}
+.aboutus-first-section i{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+.aboutus-testimonials{
+  background-color: rgb(238, 238, 238);
+}
+.aboutus-testimonials i{
+  color: #c2141a;
+  font-size: 55px;
+  padding-bottom: 40px;
+}
+.aboutus-section-two{
+  padding-bottom: 100px;
+}
+
+.aboutus-section-words{
+  padding-top: 80px;
+}
+.images-ss{
+  position: relative;
+}
+/* .aboutus-img-1{
+  width: 120%;
+}
+.aboutus-img-2{
+  width: 40%;
+}
+.aboutus-img-1 {
+  position: relative;
+  top: 0;
+  left: 30%;
+}
+.aboutus-img-2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+
+}
+@media only screen and (max-width: 1500px){
+  .aboutus-img-2{
+    top: 100%;
+    left: 50%;
+  }
+} */
+.aboutus-img-1-img{
+    position: relative;
+    top: 10%;
+    width: 70%;
+    left: 30%;
+}
+.aboutus-img-2-img{
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+
+}
+@media only screen and (min-width: 1400px){
+  .aboutus-img-1-img{
+    top: 10%;
+    left: 30%;
+  }
+  .aboutus-img-2-img{
+    top: 40%;
+    left: 20%;
+
+  } 
+}
+@media only screen and (min-width: 2000px){
+  .aboutus-img-1-img{
+    top: 10%;
+    left: 30%;
+  }
+  .aboutus-img-2-img{
+    top: 65%;
+    left: 20%;
+
+  } 
+}
+
+
+/* .....................service section................ */
+
+.service-second-section{
+  padding-bottom: 70px;
+}
+
+.service-second-section-img{
+  width: 180%;
+}
+
+.service-second-section h1{
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1400px){
+  .service-second-section-img{
+    width: 140%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .service-second-section-img{
+    display: none;
+  }
+}
+
+
+/* ...........................contact-us............................. */
+
+.contact-us-second-section{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact-us-second-section i{
+  font-size: 50px;
+}
+.contact-us-second-section h3{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.contact-us-second-section p{
+  color: #757ca3;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:511px;
+}
+iframe {
+  width: 120%;
+}
+form{
+  border: none;
+  padding: 10px;
+}
+#btn{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  border-radius: 0%;
+}
+.form-control{
+  background-color: rgb(241, 243, 243);
+  border: none;
+}
+@media only screen and (min-width: 1400px){
+  form{
+    padding: 10px;
+  }
+  #btn{
+    font-size: 15px;
+  }
+  .form-control{
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(241, 243, 243);
+    border: none;
+  }
+}
+.ontact-us-map-section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.ontact-us-map-section h1{
+  font-weight: 500;
 }
