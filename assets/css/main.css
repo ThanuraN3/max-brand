@@ -61,6 +61,9 @@ h3{
     font-size: 5px;
   }
 }
+a{
+  text-decoration: none;
+}
 h4{
   font-weight: 700;
   font-family: poppins;
@@ -139,16 +142,39 @@ img, .img-fluid {
     border-bottom: 2px solid #fff;
 }
 .navbar-brand{
-  width: 15%;
+  width: 20%;
 }
+@media only screen and (max-width: 500px){
+  .navbar-brand{
+    width: 50%;
+  }
+}
+
 /* .........................first-section....................... */
 .first-section{
   background-color: #c2141a;
   padding-bottom: 90px;
   padding-top: 70px;
 }
+.first-section button{
+  background-color: #ec292f;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  border-radius: 0%;
+
+}
+.first-section button:hover{
+  background-color: #000000;
+}
+ 
+
+
 .first-section h1{
   color: #ffffff;
+  padding-bottom: 20px;
 }
 .first-section h4{
   color: #ffffff;
@@ -169,6 +195,14 @@ img, .img-fluid {
 .index-third-section{
   padding-top: 50px;
 }
+@media only screen and (max-width: 500px){
+  .index-third-section-img{
+    display: none;
+  }
+  .index-third-section{
+    padding-bottom: 50px;
+  }
+}
 .index-third-section-img{
   width: 150%;
   padding-bottom: 100px;
@@ -184,9 +218,16 @@ img, .img-fluid {
 }
 .index-third-section .buttons button{
   background-color: #c2141a;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  border-radius: 0%;
+
+}
+.index-third-section .buttons button:hover{
+  background-color: #000000;
 }
 /* ..............................forthsection...................................... */
 
@@ -211,7 +252,9 @@ img, .img-fluid {
   padding-bottom: 50px;
   padding-left: 50px;
 }
-
+.navbar-toggler-icon{
+  font-size: 20px;
+}
 
 /* ..............................fifth-section............................. */
 .testimonials i{
@@ -299,6 +342,15 @@ img, .img-fluid {
   width: 150%;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 500px){
+  .index-six-section-img{
+    display: none;
+  }
+  .index-six-section{
+    padding-bottom: 50px;
+  }
+}
+
 .index-six-section-words{
   padding-top: 80px;
   padding-bottom: 50px;
@@ -310,9 +362,16 @@ img, .img-fluid {
 }
 .index-six-section .buttons button{
   background-color: #c2141a;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  border-radius: 0%;
+  
+}
+.index-six-section .buttons button:hover{
+  background-color: #000000;
 }
 
 /* .......................footer......................... */
@@ -336,6 +395,9 @@ img, .img-fluid {
 .footer-section p{
   color: #757ca3;
 }
+.footer-section p a{
+  color: #757ca3;
+}
 .footer-lastsection{
   border-top: solid;
   padding-top: 30px;
@@ -345,6 +407,14 @@ img, .img-fluid {
 @media only screen and (max-width: 800px){
   .company-logos{
     display: none;
+  }
+}
+@media only screen and (max-width: 500px){
+  .footer-section{
+    text-align: center;
+  }
+  .footer-logo{
+    padding-left: 100px;
   }
 }
 
@@ -396,6 +466,17 @@ img, .img-fluid {
   top: 40%;
   left: 20%;
 
+}
+@media only screen and (max-width: 500px){
+  .aboutus-img-1-img{
+    top: 10%;
+    left: 25%;
+  }
+  .aboutus-img-2-img{
+    top: 40%;
+    left: 8%;
+
+  } 
 }
 @media only screen and (min-width: 1400px){
   .aboutus-img-1-img{
@@ -470,6 +551,7 @@ form{
   padding: 10px;
 }
 #btn{
+  background-color: #c2141a;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
@@ -477,9 +559,26 @@ form{
   font-size: small;
   border-radius: 0%;
 }
+#btn:hover{
+  background-color: #000000;
+}
 .form-control{
   background-color:rgb(237, 248, 248);
   border: none;
+}
+@media only screen and (max-width: 500px){
+  form{
+    padding: 10px;
+  }
+  #btn{
+    font-size: 15px;
+  }
+  .form-control{
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(237, 248, 248);
+    border: none;
+  }
 }
 @media only screen and (min-width: 1400px){
   form{
@@ -527,4 +626,49 @@ form{
   text-align:right;
   height:auto;
   width:100%;
+}
+
+/* .....................index-animations............................. */
+
+#slider-container {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  max-width: 1385px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+#slider-scroller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(260px * 6);
+  transition: all 1s ease;
+}
+
+.slider-item {
+  width: 220px;
+  height: 110px;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  border-right: solid;
+  border-color: #dadada;
+}
+
+.slider-item img {
+  filter: grayscale(100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  height: auto;
+  max-width: 200px;
+  max-height: 100px;
 }
